@@ -45,11 +45,12 @@ export function AnswerOption({
     <motion.button
       onClick={onClick}
       disabled={disabled || showResult}
-      className={`w-full p-4 rounded-2xl border-2 font-medium text-left transition-all ${getStyle()}`}
+      className={`w-full p-4 rounded-2xl border-2 font-medium text-left transition-all font-roboto ${getStyle()}`}
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       whileHover={!showResult && !disabled ? { scale: 1.02 } : {}}
       whileTap={!showResult && !disabled ? { scale: 0.98 } : {}}
+      style={{ fontFamily: "'Roboto', sans-serif" }}
     >
       {text}
     </motion.button>

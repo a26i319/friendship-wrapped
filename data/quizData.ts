@@ -43,7 +43,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
       { id: "c", text: "Gym 90 / Sleep 10" },
       { id: "d", text: "Confusion 999" },
     ],
-    correctAnswerId: "d",
+    correctAnswerId: "c",
   },
   {
     id: "5",
@@ -58,14 +58,14 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
   },
   {
     id: "6",
-    question: "Which update should I release next?",
+    question: "Which one feels most like me?" ,
     options: [
-      { id: "a", text: "Sleep patch" },
-      { id: "b", text: "Touch grass DLC" },
-      { id: "c", text: "Social skill expansion pack" },
-      { id: "d", text: "Remove bugs update" },
+      { id: "a", text: "I'll do it tomorrow" },
+      { id: "b", text: "How did I end up here" },
+      { id: "c", text: "Just one more minute" },
+      { id: "d", text: "All of the above" },
     ],
-    correctAnswerId: "a",
+    correctAnswerId: "d",
   },
   {
     id: "7",
@@ -83,7 +83,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
 export const CORRECT_FEEDBACK = [
   "Okay you actually know me",
   "Suspiciously accurate",
-  "Professional observer unlocked",
+  "Wow, you got that right? Impressive.",
   "You're scary accurate 👀",
   "Literally why are you so right",
   "That's it. You win.",
@@ -96,6 +96,6 @@ export const WRONG_FEEDBACK = [
   "Certified questionable decision",
   "Did you even try?",
   "Not this one chief",
-  "Nope, try again! 💪",
+  "Nope, try again! ",
   "Absolutely not",
 ];
