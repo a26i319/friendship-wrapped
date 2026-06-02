@@ -10,6 +10,9 @@ import { EndingScreen } from "@/components/ending";
 import { WRAPPED_CARDS } from "@/data/wrappedData";
 import { QUIZ_QUESTIONS } from "@/data/quizData";
 
+
+
+
 type AppScreen = "loading" | "welcome" | "wrapped" | "quiz" | "results" | "ending" | "complete";
 
 export default function Home() {
