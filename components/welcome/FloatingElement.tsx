@@ -30,7 +30,6 @@ export function FloatingElement({
         duration,
         repeat: Infinity,
         delay,
-        ease: "easeInOut",
       }}
     >
       {emoji}
