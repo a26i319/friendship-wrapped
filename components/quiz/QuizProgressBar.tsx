@@ -17,7 +17,7 @@ export function QuizProgressBar({ current, total }: QuizProgressBarProps) {
           className="h-full rounded-full bg-gradient-to-r from-pink-400 to-purple-400"
           initial={{ width: "0%" }}
           animate={{ width: `${percentage}%` }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+          transition={{ duration: 0.5 }}
         />
       </div>
     </div>

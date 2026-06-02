@@ -6,13 +6,11 @@ import type { ResultCard } from "@/types/results";
 interface ResultCardProps {
   card: ResultCard;
   index: number;
-  isInsight?: boolean;
 }
 
 export function ResultCardComponent({
   card,
   index,
-  isInsight = false,
 }: ResultCardProps) {
   const containerVariants = {
     hidden: { opacity: 0, y: 20, scale: 0.95 },
@@ -23,7 +21,6 @@ export function ResultCardComponent({
       transition: {
         duration: 0.5,
         delay: index * 0.15,
-        ease: "easeOut",
       },
     },
   };

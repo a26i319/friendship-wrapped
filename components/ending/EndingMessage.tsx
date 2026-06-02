@@ -19,7 +19,7 @@ export function EndingMessage({
     <motion.div
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay, ease: "easeOut" }}
+      transition={{ duration: 0.8, delay }}
       className={`${isVersion ? "mb-8" : "mb-6"}`}
     >
       <p

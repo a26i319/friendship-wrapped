@@ -40,7 +40,7 @@ export function ScoreCircle({ score, total }: ScoreCircleProps) {
             strokeDasharray={circumference}
             strokeDashoffset={circumference}
             animate={{ strokeDashoffset }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
+            transition={{ duration: 1.5 }}
             strokeLinecap="round"
           />
         </svg>

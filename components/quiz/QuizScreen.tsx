@@ -28,7 +28,7 @@ export function QuizScreen({ questions, onComplete }: QuizScreenProps) {
 
     const isCorrect = selectedAnswerId === currentQuestion.correctAnswerId;
     const feedbackArray = isCorrect ? CORRECT_FEEDBACK : WRONG_FEEDBACK;
-    return feedbackArray[Math.floor(Math.random() * feedbackArray.length)];
+    return feedbackArray[selectedAnswerId.charCodeAt(0) % feedbackArray.length];
   }, [selectedAnswerId, currentQuestion.correctAnswerId]);
 
   const handleSelectAnswer = (optionId: string) => {

@@ -18,7 +18,7 @@ export function WrappedCardComponent({ card, isActive }: CardProps) {
           ? { opacity: 1, scale: 1, y: 0 }
           : { opacity: 0, scale: 0.8, y: 20 }
       }
-      transition={{ duration: 0.4, ease: "easeOut" }}
+      transition={{ duration: 0.4 }}
     >
       <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-pink-100 via-white to-purple-100 p-8 shadow-xl backdrop-blur-md border border-white/50">
         {/* Animated background */}

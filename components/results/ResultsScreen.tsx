@@ -59,7 +59,6 @@ export function ResultsScreen({
               key={card.id}
               card={card}
               index={index}
-              isInsight={card.type !== "stat"}
             />
           ))}
         </motion.div>

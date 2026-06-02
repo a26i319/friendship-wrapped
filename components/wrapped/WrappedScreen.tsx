@@ -1,10 +1,9 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence, PanInfo } from "framer-motion";
 import { WrappedCardComponent } from "./WrappedCard";
 import { ProgressIndicator } from "./ProgressIndicator";
-import { Button } from "@/components/ui/Button";
 import type { WrappedCard } from "@/types/wrapped";
 
 interface WrappedScreenProps {
@@ -15,7 +14,6 @@ interface WrappedScreenProps {
 export function WrappedScreen({ cards, onComplete }: WrappedScreenProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(0);
-  const dragRef = useRef<number>(0);
 
   const goToPrevious = () => {
     setDirection(-1);
